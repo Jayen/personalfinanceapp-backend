@@ -8,10 +8,9 @@ import (
 
 func GetDbConnection() (*sql.DB, error) {
 
-	//TODO Add support for local development
-
 	url := ""
 
 	db, err := sql.Open("libsql", url)
+
 	return db, err
 }
